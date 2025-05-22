@@ -1,92 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Shafik Amin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
+            /* Updated font */
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc; /* Lighter page background */
-            color: #333333; /* Darker text for better contrast */
-            line-height: 1.7; /* Increased line height for readability */
+            background-color: #f8f9fa;
+            /* Slightly lighter page background */
+            color: #212529;
+            /* Darker text for better contrast */
+            line-height: 1.8;
+            /* Increased line height */
         }
+
         .container {
-            max-width: 900px; /* Max width for main content area */
-            margin: 0 auto; /* Center the container */
-            padding: 0 15px; /* Padding for smaller screens */
+            max-width: 960px;
+            /* Slightly wider container */
+            margin: 0 auto;
+            padding: 0 20px;
+            /* Increased padding */
         }
+
         header {
-            background: #263238; /* Darker, more modern header/footer */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Modern gradient */
             color: #ffffff;
-            padding: 1.5rem 0; /* Increased padding */
+            padding: 2rem 0;
+            /* Increased padding */
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            /* Softer, deeper shadow */
         }
+
         header h1 {
             margin: 0;
-            font-size: 2.2em; /* Larger heading */
+            font-family: 'Montserrat', sans-serif;
+            /* Heading font */
+            font-size: 2.5em;
+            /* Larger heading */
+            font-weight: 700;
         }
+
         main {
-            display: block; /* Ensure main is treated as a block */
-            margin: 30px auto; /* Top/bottom margin, centered */
-            padding: 30px; /* Increased padding */
-            background-color: #ffffff; /* White content background */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Softer, more modern shadow */
+            display: block;
+            margin: 40px auto;
+            /* Increased margin */
+            padding: 40px;
+            /* Increased padding */
+            background-color: #ffffff;
+            border-radius: 12px;
+            /* More rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            /* Softer, more pronounced shadow */
         }
+
         section {
-            margin-bottom: 25px; /* Increased section spacing */
-            padding-bottom: 25px; /* Padding for content before border */
-            border-bottom: 1px solid #eeeeee; /* Subtle separator */
+            margin-bottom: 30px;
+            /* Increased section spacing */
+            padding-bottom: 30px;
+            /* Padding for content before border */
+            border-bottom: 1px solid #e9ecef;
+            /* Lighter separator */
         }
+
         section:last-of-type {
-            border-bottom: none; /* No border for the last section */
+            border-bottom: none;
+            /* No border for the last section */
             margin-bottom: 0;
             padding-bottom: 0;
         }
+
         h2 {
-            color: #00796b; /* Accent color for headings */
-            font-size: 1.8em; /* Larger section titles */
-            margin-bottom: 15px; /* Space below heading */
+            font-family: 'Montserrat', sans-serif;
+            /* Heading font */
+            color: #667eea;
+            /* Primary accent color */
+            font-size: 2em;
+            /* Larger section titles */
+            margin-bottom: 20px;
+            /* Space below heading */
+            border-bottom: 2px solid #667eea;
+            /* Underline effect for heading */
+            padding-bottom: 10px;
+            /* Space between text and underline */
+            display: inline-block;
+            /* To make border-bottom only span the text width */
         }
+
         p {
-            margin-bottom: 15px; /* Consistent paragraph spacing */
+            margin-bottom: 20px;
+            /* Consistent paragraph spacing */
+            font-size: 1.1em;
+            /* Slightly larger paragraph text */
         }
+
         a {
-            color: #00796b; /* Accent color for links */
+            color: #667eea;
+            /* Primary accent color for links */
             text-decoration: none;
-            font-weight: bold; /* Make links stand out more */
+            font-weight: bold;
+            transition: color 0.3s ease;
+            /* Smooth transition for hover effect */
         }
-        a:hover, a:focus {
-            color: #004d40; /* Darker shade on hover/focus */
-            text-decoration: none; /* Keep underline off on hover for a cleaner look */
+
+        a:hover,
+        a:focus {
+            color: #764ba2;
+            /* Secondary accent color on hover/focus */
+            text-decoration: underline;
+            /* Add underline on hover for clarity */
         }
+
         footer {
             text-align: center;
-            padding: 20px 0; /* Increased padding */
-            background: #263238; /* Match header */
+            padding: 25px 0;
+            /* Increased padding */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Match header gradient */
             color: #ffffff;
-            margin-top: 30px; /* Space above footer */
+            margin-top: 40px;
+            /* Space above footer */
+            font-family: 'Montserrat', sans-serif;
         }
+
+        footer p {
+            margin-bottom: 0;
+            /* Remove default paragraph margin in footer */
+            font-size: 0.9em;
+        }
+
         /* Basic responsiveness: Adjust padding for smaller screens */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
+
             h2 {
-                font-size: 1.5em;
+                font-size: 1.7em;
             }
+
             main {
-                margin: 20px 10px;
-                padding: 20px;
+                margin: 20px 15px;
+                /* Adjusted margin for smaller screens */
+                padding: 25px;
+                /* Adjusted padding */
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -96,11 +166,13 @@
     <main class="container">
         <section>
             <h2>Introduction</h2>
-            <p>Shafik Amin is a passionate individual with a deep love for computers and technology. He is constantly exploring new advancements and enjoys tackling challenging problems in the tech world.</p>
+            <p>Shafik Amin is a passionate individual with a deep love for computers and technology. He is constantly
+                exploring new advancements and enjoys tackling challenging problems in the tech world.</p>
         </section>
         <section>
             <h2>Current Role</h2>
-            <p>Shafik currently holds the position of Principal Engineer at DaySmart, where he contributes his expertise to developing innovative solutions.</p>
+            <p>Shafik currently holds the position of Principal Engineer at DaySmart, where he contributes his expertise
+                to developing innovative solutions.</p>
         </section>
         <section>
             <h2>Family</h2>
@@ -109,37 +181,13 @@
         <section>
             <h2>Online Presence</h2>
             <p>Explore Shafik's online business: <a href="http://pollamin.com">pollamin.com</a></p>
-            <p>View Shafik's virtual business card: <a href="https://pollamin.com/shafik_amin.html">Shafik Amin's Virtual Business Card</a></p>
+            <p>View Shafik's virtual business card: <a href="https://pollamin.com/shafik_amin.html">Shafik Amin's
+                    Virtual Business Card</a></p>
         </section>
     </main>
     <footer class="container">
         <p>&copy; 2025 Shafik Amin</p>
     </footer>
 </body>
-    <header>
-        <h1>Shafik Amin</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Shafik Amin is a passionate individual with a deep love for computers and technology. He is constantly exploring new advancements and enjoys tackling challenging problems in the tech world.</p>
-        </section>
-        <section>
-            <h2>Current Role</h2>
-            <p>Shafik currently holds the position of Principal Engineer at DaySmart, where he contributes his expertise to developing innovative solutions.</p>
-        </section>
-        <section>
-            <h2>Family</h2>
-            <p>Shafik is married to Colissa Pollard, who also works at DaySmart.</p>
-        </section>
-        <section>
-            <h2>Online Presence</h2>
-            <p>Explore Shafik's online business: <a href="http://pollamin.com">pollamin.com</a></p>
-            <p>View Shafik's virtual business card: <a href="https://pollamin.com/shafik_amin.html">Shafik Amin's Virtual Business Card</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Shafik Amin</p>
-    </footer>
-</body>
+
 </html>
